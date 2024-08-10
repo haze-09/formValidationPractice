@@ -13,23 +13,23 @@
             <legend>Your Information</legend>
 
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" autocomplete="email">
             <p class="error" id="emailErr" aria-live="polite"></p>
 
             <label for="country">Country:</label>
-            <input type="text" name="country" id="country">
+            <input type="text" name="country" id="country" autocomplete="country-name">
             <p class="error" id="countryErr" aria-live="polite"></p>
 
             <label for="zip">ZIP code:</label>
-            <input type="text" name='zip' id="zip" />
+            <input type="text" name='zip' id="zip" autocomplete="postal-code"/>
             <p class="error" id="textErr" aria-live="polite"></p>
 
             <label for="pwd">Password:</label>
-            <input type="password" name="pwd" id="pwd">
+            <input type="password" name="pwd" id="pwd" autocomplete="new-password">
             <p class="error" id="pwdErr" aria-live="polite"></p>
 
             <label for="pwdconfirm">Confirm Password:</label>
-            <input type="password" name="confirm" id="pwdconfirm">
+            <input type="password" name="confirm" id="pwdconfirm" autocomplete="new-password">
             <p class="error" id="pwdConfirmErr" aria-live="polite"></p>
 
             <button type="submit">Submit</button>
