@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pizza</title>
 </head>
+
 <body>
-    
+    <form novalidate>
+        <fieldset>
+            <legend>Your Information</legend>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <p class="error" id="emailErr" aria-live="polite"></p>
+
+            <label for="country">Country:</label>
+            <input type="text" name="country" id="country">
+            <p class="error" id="countryErr" aria-live="polite"></p>
+
+            <label for="zip">ZIP code:</label>
+            <input type="text" name='zip' id="zip" />
+            <p class="error" id="textErr" aria-live="polite"></p>
+
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd">
+            <p class="error" id="pwdErr" aria-live="polite"></p>
+
+            <label for="pwdconfirm">Confirm Password:</label>
+            <input type="password" name="confirm" id="pwdconfirm">
+            <p class="error" id="pwdConfirmErr" aria-live="polite"></p>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
 </body>
+
 </html>
