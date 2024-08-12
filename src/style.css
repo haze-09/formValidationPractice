@@ -3,10 +3,11 @@
 body{
     display: flex;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
 
 }
 fieldset{
-    font-family: "Poppins", sans-serif;
+    
     border-radius: 5px;
     display: flex;
     flex-direction: column;

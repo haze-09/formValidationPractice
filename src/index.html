@@ -21,11 +21,11 @@
             <p class="error" id="countryErr" aria-live="polite"></p>
 
             <label for="pin">Pin code:</label>
-            <input type="text" name='pin' id="pin" autocomplete="postal-code" required/>
+            <input type="text" name='pin' id="pin" autocomplete="postal-code" required pattern="^\d{6}$"/>
             <p class="error" id="pinErr" aria-live="polite"></p>
 
             <label for="pwd">Password:</label>
-            <input type="password" name="pwd" id="pwd" autocomplete="new-password" required>
+            <input type="password" name="pwd" id="pwd" autocomplete="new-password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
             <p class="error" id="pwdErr" aria-live="polite"></p>
 
             <label for="pwdconfirm">Confirm Password:</label>
@@ -36,6 +36,7 @@
         </fieldset>
         </fieldset>
     </form>
+    <p id="message"></p>
 
 </body>
 
