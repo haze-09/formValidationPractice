@@ -18,6 +18,13 @@ input{
     max-width: 10rem;
     font-family: inherit;
 }
+input:valid{
+    background: rgba(0, 255, 47, 0.145);
+}
+
+input:invalid{
+    background: rgba(255, 0, 0, 0.145);
+}
 
 .error{
     margin: 0;

@@ -46,9 +46,11 @@ function validation() {
       if (!form.elements["pwd"].validity.patternMismatch) {
         document.querySelector("#pwdErr").textContent = "";
       }
+      form.elements["pwdconfirm"].setCustomValidity("Passwords don't match.");
       document.querySelector("#pwdConfirmErr").textContent =
         "Passwords don't match.";
     } else {
+      form.elements["pwdconfirm"].setCustomValidity("");
       document.querySelector("#pwdErr").textContent = "";
     }
   }
@@ -60,9 +62,11 @@ function validation() {
     } else if (
       form.elements["pwd"].value !== form.elements["pwdconfirm"].value
     ) {
+      form.elements["pwdconfirm"].setCustomValidity("Passwords don't match.");
       document.querySelector("#pwdConfirmErr").textContent =
         "Passwords don't match.";
     } else {
+      form.elements["pwdconfirm"].setCustomValidity("");
       document.querySelector("#pwdConfirmErr").textContent = "";
     }
   }
@@ -79,7 +83,10 @@ function validation() {
   form.elements["country"].addEventListener("input", validateCountry);
   form.elements["pin"].addEventListener("input", validatePin);
   form.elements["pwd"].addEventListener("input", validatePassword);
-  form.elements["pwdconfirm"].addEventListener("input", validatePasswordConfirm);
+  form.elements["pwdconfirm"].addEventListener(
+    "input",
+    validatePasswordConfirm
+  );
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
