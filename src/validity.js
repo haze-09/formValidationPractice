@@ -83,10 +83,7 @@ function validation() {
   form.elements["country"].addEventListener("input", validateCountry);
   form.elements["pin"].addEventListener("input", validatePin);
   form.elements["pwd"].addEventListener("input", validatePassword);
-  form.elements["pwdconfirm"].addEventListener(
-    "input",
-    validatePasswordConfirm
-  );
+  form.elements["pwdconfirm"].addEventListener("input", validatePasswordConfirm);
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
